@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>How Long Will This Take?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<noscript><link rel="stylesheet" href="dist/css/noscript.min.css"/></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main">
+				<header>
+					<span class="avatar"><i class="fa fa-briefcase"></i></span>
+					<h1>How long will this take?</h1>
+					<div class="hours" id="est">
+						<h2><span data-task></span></h2>
+						<h2><span data-time>0</span> Hours</h2>
+					</div>
+
+					<div class="fields">
+						<label for="task">Enter Your Task</label>
+						<input type="text" id="task" placeholder="Task Name" />
+						<button id="get_time">Let's Find Out</button>
+					</div>
+				</header>
+			</section>
+
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Dev Time</li>
+					<li>
+						<small>Design: <a href="http://html5up.net">HTML5 UP</a></small>
+					</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script>
+			if ("addEventListener" in window) {
+				window.addEventListener("load", function() {
+					document.body.className = document.body.className.replace(/\bis-preload\b/, "");
+				});
+				document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? " is-ie" : "";
+			}
+		</script>
+		<script src="./dist/js/scripts.min.js"></script>
+	</body>
+</html>
