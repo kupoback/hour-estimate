@@ -9,7 +9,7 @@ export default {
 
 		let buttonClick = () => {
 			taskData.innerText = task.value;
-			timeData.innerText = Math.floor(Math.random() * 100) + 1;
+			timeData.innerText = Math.floor(Math.random() * 100 + 1) * 0.2;
 			counterUp(timeData, {
 				duration: 500,
 				delay: 16,
